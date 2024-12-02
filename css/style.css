@@ -1,4 +1,6 @@
-  h1,  h2,  h4 {
+  h1,
+  h2,
+  h4 {
       font-family: Gogh;
   }
 
@@ -52,21 +54,25 @@
       --main-gray-lighter: #E1FAFA;
       --text-icon-color1-light: #17E5E5;
       --text-icon-gray-dark: #3D4040;
+
+      --btn-p-hover: #17e6e6;
+      --btn-p-press: #11a6a6;
   }
 
   .bg {
-    background-color: var(--main-gray-lighter);
+      background-color: var(--main-gray-lighter);
   }
 
   .paddig-main {
-    padding: 0 16px;
+      padding: 0 16px;
   }
 
   .container {
-    max-width: 1276px;
-    min-width: 342px;
-    margin: 0 auto;
+      max-width: 1276px;
+      min-width: 342px;
+      margin: 0 auto;
   }
+
   /* Header */
   .header {
       position: fixed;
@@ -84,10 +90,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-
-      /* max-width: 1276px;
-    min-width: 342px;
-    margin: 0 auto; */
   }
 
   .btn-burger {
@@ -111,10 +113,6 @@
       display: flex;
       flex-direction: column;
       gap: 40px;
-
-      /* max-width: 1276px;
-      min-width: 342px;
-      margin: 0 auto; */
   }
 
   .top__images {
@@ -165,12 +163,7 @@
 
   .vacancy {
       padding: 80px 0;
-      /* background-color: var(--main-gray-lighter); */
       overflow: hidden;
-
-      /* max-width: 1276px;
-      min-width: 342px;
-      margin: 0 auto; */
   }
 
   .vacancy h2 {
@@ -281,7 +274,6 @@
   .presentation {
       /* width: 100vw; */
       padding: 80px 0;
-      /* background-color: var(--main-gray-lighter); */
   }
 
   .presentation__container {
@@ -345,7 +337,116 @@
       user-select: none;
       -o-object-fit: cover;
       object-fit: cover;
-  } 
+  }
+
+  /* Section FAQ */
+  .faq__container {
+      padding: 40px 0 80px;
+  }
+
+  .faq__container h2 {
+      margin-bottom: 40px;
+  }
+
+  .faq__list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .faq__item {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 12px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      cursor: pointer;
+      background: var(--main-gray-lighter);
+  }
+
+  .faq__wrapper-1, .faq__wrapper-2, .faq__wrapper-3, .faq__wrapper-4 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .wrapper__title-faq {
+      font-family: Raleway;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      color: var(--text-icon-gray-dark);
+      margin: 0 auto 0 12px;
+      transition: 0.1s ease;
+  }
+
+  .faq__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      border-radius: 4px;
+      padding: 12px;
+      width: 48px;
+      height: 48px;
+      background: var(--btn-primaty-static);
+      border: none;
+      box-sizing: border-box;
+      cursor: pointer;
+      transition: 0.1s ease;
+  }
+
+  .faq__btn:hover {
+      background-color: var(--btn-p-hover);
+  }
+
+  .faq__btn:active {
+      background-color: var(--btn-p-press);
+  }
+
+  /* #rotateButton {
+    transform: rotate(45deg);
+    transition: transform 0.2s ease;
+  } */
+
+
+  .faq__btn img {
+      /* transform: rotate(45deg); */
+      transition: transform 0.2s ease;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+  }
+
+  .rotate {
+      transform: rotate(45deg);
+      /* transition: transform 0.2s ease; */
+  }
+
+  .answear__faq-1, .answear__faq-2, .answear__faq-3, .answear__faq-4 {
+      /* opacity: 1; */
+      display: none;
+  }
+
+  .answear__faq-1.faq_active, .answear__faq-2.faq_active, .answear__faq-3.faq_active, .answear__faq-4.faq_active {
+      display: block;
+      /* opacity: 1; */
+      /* font-family: Raleway;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%; */
+      color: var(--text-icon-gray-dark);
+      margin: 0 auto 0 12px;
+      padding: 10px 10px 10px 0;
+  }
+
+  /* Footer */
+  .footer__container {
+    background-color: var(--main-black);
+    padding: 80px 0;
+  }
 
   @media(min-width: 768px) {
       .top {

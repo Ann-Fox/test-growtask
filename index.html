@@ -59,37 +59,37 @@
             </section>
         </div>
         <div class="paddig-main bg">
-        <section class="vacancy container">
-            <div class="vacancy__info">
-                <div class="vacancy__head">
-                    <h2>Про вакансию</h2>
-                    <p>Мы ищем аккуратного верстальщика, который хочет учиться и развиваться. С этим мы, конечно же,
-                        поможем.<br><br>Напомним про условия:</p>
+            <section class="vacancy container">
+                <div class="vacancy__info">
+                    <div class="vacancy__head">
+                        <h2>Про вакансию</h2>
+                        <p>Мы ищем аккуратного верстальщика, который хочет учиться и развиваться. С этим мы, конечно же,
+                            поможем.<br><br>Напомним про условия:</p>
+                    </div>
+                    <div class="vacancy__conditions">
+                        <div>
+                            <h1>20 000</h1>
+                            <p>Твой оклад на время стажировки (Возможны премии)</p>
+                        </div>
+                        <div>
+                            <h1>5/2</h1>
+                            <p>Рабочий график</p>
+                        </div>
+                        <div>
+                            <h1>8 ч</h1>
+                            <p>Рабочий день</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="vacancy__conditions">
-                    <div>
-                        <h1>20 000</h1>
-                        <p>Твой оклад на время стажировки (Возможны премии)</p>
-                    </div>
-                    <div>
-                        <h1>5/2</h1>
-                        <p>Рабочий график</p>
-                    </div>
-                    <div>
-                        <h1>8 ч</h1>
-                        <p>Рабочий день</p>
-                    </div>
+                <div class="vacancy__photo">
+                    <img src="assets/images/vacancy/about-us-1.jpg" alt="Photo about us">
+                    <img src="assets/images/vacancy/about-us-2.jpg" alt="Photo about us">
+                    <img src="assets/images/vacancy/about-us-3.jpg" alt="Photo about us">
                 </div>
-            </div>
-            <div class="vacancy__photo">
-                <img src="assets/images/vacancy/about-us-1.jpg" alt="Photo about us">
-                <img src="assets/images/vacancy/about-us-2.jpg" alt="Photo about us">
-                <img src="assets/images/vacancy/about-us-3.jpg" alt="Photo about us">
-            </div>
-        </section>
+            </section>
         </div>
         <div class="paddig-main">
-            <section class="slider">
+            <section class="slider container">
                 <div class="slider__container">
                     <div class="slider__head">
                         <h2>Сверстать слайдер</h2>
@@ -129,46 +129,109 @@
                                 </div>
                             </div>
                         </div>
-    
+
                     </div>
                 </div>
             </section>
         </div>
         <div class="paddig-main bg">
-        <section class="presentation">
-            <div class="presentation__container">
-                <picture class="presentation__image">
-                    <img id="image" class="presentation-image" type="jpg" src="/assets/images/presentation/image-1.jpg"
-                        alt="Presentation picture">
-                </picture>
+            <section class="presentation container">
+                <div class="presentation__container">
+                    <picture class="presentation__image">
+                        <img id="image" class="presentation-image" type="jpg"
+                            src="/assets/images/presentation/image-1.jpg" alt="Presentation picture">
+                    </picture>
 
-                <div class="presentation__btns">
-                    <label class="presentation__btn" data-image-url="/assets/images/presentation/image-1.jpg">
-                        <input type="checkbox" id="imageCheckbox1" class="presentation__radio" checked>
-                        <img class="radio-min-image" src="/assets/images/presentation/image-1.jpg" loading="lazy"
-                            alt="Picture 1">
-                        Картинка 1
-                    </label>
-                    <label class="presentation__btn" data-image-url="/assets/images/presentation/image-2.jpg">
-                        <input type="checkbox" id="imageCheckbox2" class="presentation__radio" checked>
-                        <img class="radio-min-image" src="/assets/images/presentation/image-2.jpg" loading="lazy"
-                            alt="Picture 2">
-                        Картинка 2
-                    </label>
-                    <label class="presentation__btn" data-image-url="/assets/images/presentation/image-3.jpg">
-                        <input type="checkbox" id="imageCheckbox3" class="presentation__radio" checked>
-                        <img class="radio-min-image" src="/assets/images/presentation/image-3.jpg" loading="lazy"
-                            alt="Picture 3">
-                        Картинка 3
-                    </label>
+                    <div class="presentation__btns">
+                        <label class="presentation__btn" data-image-url="/assets/images/presentation/image-1.jpg">
+                            <input type="checkbox" id="imageCheckbox1" class="presentation__radio" checked>
+                            <img class="radio-min-image" src="/assets/images/presentation/image-1.jpg" loading="lazy"
+                                alt="Picture 1">
+                            Картинка 1
+                        </label>
+                        <label class="presentation__btn" data-image-url="/assets/images/presentation/image-2.jpg">
+                            <input type="checkbox" id="imageCheckbox2" class="presentation__radio" checked>
+                            <img class="radio-min-image" src="/assets/images/presentation/image-2.jpg" loading="lazy"
+                                alt="Picture 2">
+                            Картинка 2
+                        </label>
+                        <label class="presentation__btn" data-image-url="/assets/images/presentation/image-3.jpg">
+                            <input type="checkbox" id="imageCheckbox3" class="presentation__radio" checked>
+                            <img class="radio-min-image" src="/assets/images/presentation/image-3.jpg" loading="lazy"
+                                alt="Picture 3">
+                            Картинка 3
+                        </label>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
         </div>
-        <section class="faq"></section>
+        <div class="paddig-main">
+            <section class="faq container">
+                <div class="faq__container">
+                    <h2>Ответы на вопросы</h2>
+                    <ul class="faq__list">
+                        <li class="faq__item item-1">
+                            <div class="faq__wrapper-1">
+                                <h3 class="wrapper__title-faq">У вас много проектов?</h3>
+                                <button class="faq__btn">
+                                    <img id="rotateButton-1" src="/assets/icons/Icon (Stroke).svg" alt="Open/close">
+                                </button>
+                            </div>
+                            <div class="faq__wrapper-answer">
+                                <p class="answear__faq-1">
+                                    У вас много проектов?
+                                </p>
+                            </div>
+                        </li>
+                        <li class="faq__item item-2">
+                            <div class="faq__wrapper-2">
+                                <h3 class="wrapper__title-faq">Есть ли карьерный рост?</h3>
+                                <button class="faq__btn">
+                                    <img id="rotateButton-2" src="/assets/icons/Icon (Stroke).svg" alt="Open/close">
+                                </button>
+                            </div>
+                            <div class="faq__wrapper-answer">
+                                <p class="answear__faq-2">
+                                    Есть ли карьерный рост?
+                                </p>
+                            </div>
+                        </li>
+                        <li class="faq__item item-3">
+                            <div class="faq__wrapper-3">
+                                <h3 class="wrapper__title-faq">У вас большой штат?</h3>
+                                <button class="faq__btn">
+                                    <img id="rotateButton-3" src="/assets/icons/Icon (Stroke).svg" alt="Open/close">
+                                </button>
+                            </div>
+                            <div class="faq__wrapper-answer">
+                                <p class="answear__faq-3">
+                                    На сегодняшний день в нашей команде 11 человек
+                                </p>
+                            </div>
+                        </li>
+                        <li class="faq__item item-4">
+                            <div class="faq__wrapper-4">
+                                <h3 class="wrapper__title-faq">Какие цели у вашей студии?</h3>
+                                <button class="faq__btn">
+                                    <img id="rotateButton-4" src="/assets/icons/Icon (Stroke).svg" alt="Open/close">
+                                </button>
+                            </div>
+                            <div class="faq__wrapper-answer">
+                                <p class="answear__faq-4">
+                                    Разработка качественных и уникальных сайтов для малого и среднего бизнеса
+                                </p>
+                            </div>
+                        </li>
+                </div>
+            </section>
+        </div>
     </main>
-    <footer>form</footer>
-    
+    <footer>
+        <section class="footer__container">
+            <div>mklmk</div>
+        </section>
+    </footer>
+
     <!-- Подключение Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Подключение js -->
