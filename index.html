@@ -13,12 +13,16 @@
     <link rel="manifest" href="favicon/site.webmanifest" />
     <!-- Подключение стилей -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <title>Growtask</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="header__content">
+        <div class="header__content container">
 
             <a class="header__logo">
                 <img src="/assets/images/logo-gradient.svg" alt="">
@@ -32,27 +36,30 @@
         </div>
     </header>
     <main>
-        <section class="top">
-            <div class="top__head">
-                <h1>Покажи нам чудеса <span>своей вёрстки</span></h1>
-                <p>Это текстовое задание, которое нужно просто и грамотно сверстать. Мы уверены, что у тебя всё
-                    получится.</p>
-            </div>
-            <div class="top__images">
-                <div>
-                    <img src="assets/images/top-screen/image1.jpg" alt="">
-                    <img src="assets/images/top-screen/image2.jpg" alt="">
+        <div class="paddig-main">
+            <section class="top container">
+                <div class="top__head">
+                    <h1>Покажи нам чудеса <span>своей вёрстки</span></h1>
+                    <p>Это текстовое задание, которое нужно просто и грамотно сверстать. Мы уверены, что у тебя всё
+                        получится.</p>
                 </div>
-                <div>
-                    <img src="assets/images/top-screen/image3.jpg" alt="">
+                <div class="top__images">
+                    <div>
+                        <img src="assets/images/top-screen/image1.jpg" alt="">
+                        <img src="assets/images/top-screen/image2.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/images/top-screen/image3.jpg" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="top__to-form">
-                <h2>Покажи сколл <span>до формы:</span></h2>
-                <button>К форме</button>
-            </div>
-        </section>
-        <section class="vacancy">
+                <div class="top__to-form">
+                    <h4>Покажи сколл <span>до формы:</span></h4>
+                    <button>К форме</button>
+                </div>
+            </section>
+        </div>
+        <div class="paddig-main bg">
+        <section class="vacancy container">
             <div class="vacancy__info">
                 <div class="vacancy__head">
                     <h2>Про вакансию</h2>
@@ -74,18 +81,98 @@
                     </div>
                 </div>
             </div>
-           <div class="vacancy__photo">
-<img src="assets/images/vacancy/about-us-1.jpg" alt="Photo about us">
-<img src="assets/images/vacancy/about-us-2.jpg" alt="Photo about us">
-<img src="assets/images/vacancy/about-us-3.jpg" alt="Photo about us">
-           </div>
+            <div class="vacancy__photo">
+                <img src="assets/images/vacancy/about-us-1.jpg" alt="Photo about us">
+                <img src="assets/images/vacancy/about-us-2.jpg" alt="Photo about us">
+                <img src="assets/images/vacancy/about-us-3.jpg" alt="Photo about us">
+            </div>
         </section>
-        <section class="slider">Слайдер</section>
-        <section class="presentation"></section>
+        </div>
+        <div class="paddig-main">
+            <section class="slider">
+                <div class="slider__container">
+                    <div class="slider__head">
+                        <h2>Сверстать слайдер</h2>
+                    </div>
+                    <div class="swiper__container">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="/assets/images/slider/slider-1.jpg" alt="">
+                                    <div class="slider__text">
+                                        <p>Северная корона</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/assets/images/slider/slider-2.jpg" alt="">
+                                    <div class="slider__text">
+                                        <p>Moscow barbering school</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/assets/images/slider/slider-3.jpg" alt="">
+                                    <div class="slider__text">
+                                        <p>Rh store</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/assets/images/slider/slider-4.jpg" alt="">
+                                    <div class="slider__text">
+                                        <p>Poolspecial</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/assets/images/slider/slider-5.jpg" alt="">
+                                    <div class="slider__text">
+                                        <p>Rh</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="paddig-main bg">
+        <section class="presentation">
+            <div class="presentation__container">
+                <picture class="presentation__image">
+                    <img id="image" class="presentation-image" type="jpg" src="/assets/images/presentation/image-1.jpg"
+                        alt="Presentation picture">
+                </picture>
+
+                <div class="presentation__btns">
+                    <label class="presentation__btn" data-image-url="/assets/images/presentation/image-1.jpg">
+                        <input type="checkbox" id="imageCheckbox1" class="presentation__radio" checked>
+                        <img class="radio-min-image" src="/assets/images/presentation/image-1.jpg" loading="lazy"
+                            alt="Picture 1">
+                        Картинка 1
+                    </label>
+                    <label class="presentation__btn" data-image-url="/assets/images/presentation/image-2.jpg">
+                        <input type="checkbox" id="imageCheckbox2" class="presentation__radio" checked>
+                        <img class="radio-min-image" src="/assets/images/presentation/image-2.jpg" loading="lazy"
+                            alt="Picture 2">
+                        Картинка 2
+                    </label>
+                    <label class="presentation__btn" data-image-url="/assets/images/presentation/image-3.jpg">
+                        <input type="checkbox" id="imageCheckbox3" class="presentation__radio" checked>
+                        <img class="radio-min-image" src="/assets/images/presentation/image-3.jpg" loading="lazy"
+                            alt="Picture 3">
+                        Картинка 3
+                    </label>
+                </div>
+            </div>
+        </section>
+        </div>
         <section class="faq"></section>
     </main>
     <footer>form</footer>
+    
+    <!-- Подключение Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Подключение js -->
+    <script src="js/script.js"></script>
 </body>
-<script src="js/script.js"></script>
 
 </html>
