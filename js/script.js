@@ -20,25 +20,25 @@ const image = document.querySelector('#image')
 
 imageCheckbox1.addEventListener('change', function () {
     if (imageCheckbox1.checked) {
-       image.src = '/assets/images/presentation/image-1.jpg'
+       image.src = './assets/images/presentation/image-1.jpg'
     } else {
-       image.src = '/assets/images/presentation/image-1.jpg'
+       image.src = './assets/images/presentation/image-1.jpg'
     }
  })
 
  imageCheckbox2.addEventListener('change', function () {
     if (imageCheckbox2.checked) {
-       image.src = '/assets/images/presentation/image-2.jpg'
+       image.src = './assets/images/presentation/image-2.jpg'
     } else {
-       image.src = '/assets/images/presentation/image-2.jpg'
+       image.src = './assets/images/presentation/image-2.jpg'
     }
  })
 
  imageCheckbox3.addEventListener('change', function () {
     if (imageCheckbox3.checked) {
-       image.src = '/assets/images/presentation/image-3.jpg'
+       image.src = './assets/images/presentation/image-3.jpg'
     } else {
-       image.src = '/assets/images/presentation/image-3.jpg'
+       image.src = './assets/images/presentation/image-3.jpg'
     }
  })
 
@@ -104,8 +104,7 @@ faq__btn4.onclick = function(){
 }
 
 
-// Стилизация кнопки checkbox
-
+// Кнопка checkbox
 const btnEl = document.querySelector('.checkbox-icon')
 if (btnEl) {
    btnEl.addEventListener('click', function (e) {
