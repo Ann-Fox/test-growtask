@@ -102,3 +102,13 @@ const faq__btn4 = document.querySelector('.faq__wrapper-4')
 faq__btn4.onclick = function(){
 	rotateButton4.classList.toggle('rotate')
 }
+
+
+// Стилизация кнопки checkbox
+
+const btnEl = document.querySelector('.checkbox-icon')
+if (btnEl) {
+   btnEl.addEventListener('click', function (e) {
+      btnEl.classList.toggle('active')
+   })
+}

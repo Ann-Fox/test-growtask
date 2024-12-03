@@ -57,6 +57,8 @@
 
       --btn-p-hover: #17e6e6;
       --btn-p-press: #11a6a6;
+      --input-static: #DAF2F2;
+      --input-error: #FF6666;
   }
 
   .bg {
@@ -365,7 +367,10 @@
       background: var(--main-gray-lighter);
   }
 
-  .faq__wrapper-1, .faq__wrapper-2, .faq__wrapper-3, .faq__wrapper-4 {
+  .faq__wrapper-1,
+  .faq__wrapper-2,
+  .faq__wrapper-3,
+  .faq__wrapper-4 {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -425,12 +430,18 @@
       /* transition: transform 0.2s ease; */
   }
 
-  .answear__faq-1, .answear__faq-2, .answear__faq-3, .answear__faq-4 {
+  .answear__faq-1,
+  .answear__faq-2,
+  .answear__faq-3,
+  .answear__faq-4 {
       /* opacity: 1; */
       display: none;
   }
 
-  .answear__faq-1.faq_active, .answear__faq-2.faq_active, .answear__faq-3.faq_active, .answear__faq-4.faq_active {
+  .answear__faq-1.faq_active,
+  .answear__faq-2.faq_active,
+  .answear__faq-3.faq_active,
+  .answear__faq-4.faq_active {
       display: block;
       /* opacity: 1; */
       /* font-family: Raleway;
@@ -444,8 +455,139 @@
 
   /* Footer */
   .footer__container {
-    background-color: var(--main-black);
-    padding: 80px 0;
+      background-color: var(--main-black);
+      padding: 80px 0;
+
+  }
+
+  .footer__bg {
+      background-image: url(/assets/images/footer/footer-main.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 40px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+  }
+
+  .footer__form {
+      background-color: #fff;
+      padding: 20px 16px;
+      border-radius: 8px;
+  }
+
+  .footer__head h2 {
+      margin-bottom: 20px;
+  }
+
+  .footer__head p,
+  .footer__head h2,
+  .footer__social h4 {
+      color: var(--main-bg-color);
+  }
+
+  .form__inputs {
+      display: grid;
+      gap: 12px;
+  }
+
+  .form__inputs input {
+      border: 2px solid var(--input-static);
+      border-radius: 4px;
+      padding: 12px 16px;
+      /* max-width: 50%; */
+      width: 100%;
+      height: 48px;
+      box-sizing: border-box;
+      /* font-family: Raleway;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%; */
+      font-family: Raleway;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: var(--text-icon-gray-dark);
+  }
+
+  input:user-invalid {
+      border: 2px solid var(--input-error);
+      outline: none;
+  }
+
+  .form__btns {
+      display: grid;
+      justify-content: start;
+  }
+
+  .form__checkbox {
+      display: none;
+  }
+
+  .label__checkbox {
+      display: flex;
+      font-size: 14px;
+      line-height: 150%;
+      color: var(--text-icon-gray-dark);
+      text-align: center;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      align-items: center;
+      cursor: pointer;
+      font-family: Raleway;
+      font-weight: 400;
+  }
+
+  .checkbox-icon {
+      width: 24px;
+      height: 24px;
+      background-image: url(../assets/images/footer/check.svg);
+      background-size: contain;
+      margin-right: 8px;
+      flex-shrink: 0;
+  }
+
+  .checkbox,
+  .checkbox-icon:hover {
+      background-image: url('../assets/images/footer/check-hover.svg');
+  }
+
+  .default {
+      background-image: url('../assets/images/footer/check.svg');
+  }
+
+  .active {
+      background-image: url('../assets/images/footer/check-active_static.svg');
+  }
+
+  .active:hover {
+      background-image: url('../assets/images/footer/check-active_hover.svg');
+  }
+
+  .footer__social {
+      display: flex;
+      flex-direction: column;
+      height: 100px;
+      justify-content: space-between;
+  }
+
+  .footer__social__links {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+  }
+
+  .footer__social a {
+      width: 48px;
+      height: 48px;
+      background-color: var(--main-bg-color);
+      border-radius: 4px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
 
   @media(min-width: 768px) {

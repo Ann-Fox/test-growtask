@@ -36,6 +36,7 @@
         </div>
     </header>
     <main>
+        <!-- section top  -->
         <div class="paddig-main">
             <section class="top container">
                 <div class="top__head">
@@ -58,6 +59,7 @@
                 </div>
             </section>
         </div>
+        <!-- section vacancy  -->
         <div class="paddig-main bg">
             <section class="vacancy container">
                 <div class="vacancy__info">
@@ -88,6 +90,7 @@
                 </div>
             </section>
         </div>
+        <!-- section slider  -->
         <div class="paddig-main">
             <section class="slider container">
                 <div class="slider__container">
@@ -98,31 +101,41 @@
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="/assets/images/slider/slider-1.jpg" alt="">
+                                    <img src="/assets/images/slider/slider-1.jpg" alt="Северная корона"
+                                        onmouseover="this.src='/assets/images/slider/slider-hover.png';"
+                                        onmouseout="this.src='/assets/images/slider/slider-1.jpg';">
                                     <div class="slider__text">
                                         <p>Северная корона</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="/assets/images/slider/slider-2.jpg" alt="">
+                                    <img src="/assets/images/slider/slider-2.jpg" alt="Moscow barbering school"
+                                        onmouseover="this.src='/assets/images/slider/slider-hover.png';"
+                                        onmouseout="this.src='/assets/images/slider/slider-2.jpg';">
                                     <div class="slider__text">
                                         <p>Moscow barbering school</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="/assets/images/slider/slider-3.jpg" alt="">
+                                    <img src="/assets/images/slider/slider-3.jpg" alt="Rh store"
+                                        onmouseover="this.src='/assets/images/slider/slider-hover.png';"
+                                        onmouseout="this.src='/assets/images/slider/slider-3.jpg';">
                                     <div class="slider__text">
                                         <p>Rh store</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="/assets/images/slider/slider-4.jpg" alt="">
+                                    <img src="/assets/images/slider/slider-4.jpg" alt="Poolspecial"
+                                        onmouseover="this.src='/assets/images/slider/slider-hover.png';"
+                                        onmouseout="this.src='/assets/images/slider/slider-4.jpg';">
                                     <div class="slider__text">
                                         <p>Poolspecial</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="/assets/images/slider/slider-5.jpg" alt="">
+                                    <img src="/assets/images/slider/slider-5.jpg" alt="Rh"
+                                        onmouseover="this.src='/assets/images/slider/slider-hover.png';"
+                                        onmouseout="this.src='/assets/images/slider/slider-5.jpg';">
                                     <div class="slider__text">
                                         <p>Rh</p>
                                     </div>
@@ -134,6 +147,7 @@
                 </div>
             </section>
         </div>
+        <!-- section presentation  -->
         <div class="paddig-main bg">
             <section class="presentation container">
                 <div class="presentation__container">
@@ -165,6 +179,7 @@
                 </div>
             </section>
         </div>
+        <!-- section faq  -->
         <div class="paddig-main">
             <section class="faq container">
                 <div class="faq__container">
@@ -228,7 +243,38 @@
     </main>
     <footer>
         <section class="footer__container">
-            <div>mklmk</div>
+            <div class="footer__bg">
+                <div class="footer__head">
+                    <h2>Форма ОС</h2>
+                    <p>Сверстай форму обратной связи. Будет круто, если заявку будут приходить сюда: a@growtask.ru</p>
+                </div>
+                <div class="footer__form">
+                    <form action="" method="post">
+                        <div class="form__inputs">
+                            <input type="text" placeholder="Напиши вопрос*" minlength="3" required>
+                            <input type="text" placeholder="Телефон или почта*" minlength="3" required><input
+                                type="text" placeholder="Твоё имя*" minlength="3" required><input type="text"
+                                placeholder="Соц.сеть или мессенджер" minlength="3" required>
+                        </div>
+                        <div class="form__btns">
+                            <label for="approval" class="label__checkbox">
+                                <input type="checkbox" id="approval" name="approval" class="form__checkbox" required>
+                                <span class="checkbox-icon"></span>
+                                <span>Согласие с политикой</span>
+                            </label>
+                            <button type="submit">Отправить заявку</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer__social">
+                    <h4>Не забудь вставить соц.сети</h4>
+                    <div class="footer__social__links">
+                        <a href="https://vk.com/growtask" target="_blank"><img src="/assets/icons/vk.svg" alt=""></a>
+                        <a href="https://t.me/growtask" target="_blank"><img src="/assets/icons/tg.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </footer>
 
