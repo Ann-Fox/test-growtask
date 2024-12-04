@@ -1,8 +1,9 @@
-  body, header {
-    max-width: 1920px;
-    margin: 0 auto;
+  body,
+  header {
+      max-width: 1920px;
+      margin: 0 auto;
   }
-  
+
   h1,
   h2,
   h4 {
@@ -40,7 +41,7 @@
   }
 
   h4 {
-      font-size: 20px;
+      font-size: 19px;
       line-height: 20px;
       text-align: left;
   }
@@ -101,6 +102,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+  }
+
+  .menu__nav {
+      display: none;
   }
 
   .btn-burger {
@@ -628,7 +633,11 @@
   .footer__social a:hover {
       background-color: var(--button-social-hover);
   }
-
+  @media(min-width: 375px) {
+    h4 {
+        font-size: 20px;
+    }
+  }
   @media(min-width: 768px) {
       .top {
           display: grid;
@@ -700,10 +709,6 @@
   }
 
   @media(min-width: 1024px) {
-      .header {
-          padding: 0 45px;
-      }
-
       .container {
           max-width: 1276px;
           /* min-width: 342px; */
@@ -711,6 +716,10 @@
       }
 
       .paddig-main {
+          padding: 0 45px;
+      }
+
+      .header {
           padding: 0 45px;
       }
 
@@ -727,27 +736,175 @@
       }
   }
 
-  @media(min-width: 1440px) {
-    .header {
-        padding: 0 45px;
-    }
+  @media(min-width: 1124px) {
+      .menu__nav {
+          display: block;
+      }
 
-    .container {
-        max-width: 1420px;
-        /* min-width: 342px; */
-        /* margin: 0 auto; */
-    }
+      .menu__ul {
+          display: flex;
+          gap: 12px;
+      }
 
-    .presentation__btns {
-        width: 440px;
-    }
+      .menu__ul li {
+          padding: 12px 20px;
+      }
 
-    .footer__bg {
-        background-image: url(../assets/images/footer/footer-main-full.svg);
-        max-width: 1420px;
-        /* padding: 60px; */
-    } 
+      .menu__link {
+          font-family: Raleway;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+          color: var(--text-icon-gray-dark);
+      }
+
+      .menu__link:hover {
+          color: var(--btn-primaty-hover);
+      }
+
+      .header__btn {
+          font-family: Raleway;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 21px;
+          padding: 0 20px;
+          border-radius: 4px;
+          color: var(--main-bg-color);
+          background-color: var(--btn-primaty-static);
+      }
+
+      .btn-burger {
+          display: none;
+      }
+
+      .top__to-form {
+          max-width: 504px;
+      }
+
+      .vacancy {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          /* grid-template-rows: 1fr; */
+          grid-column-gap: 20px;
+          /* grid-row-gap: 0px; */
+      }
+
+      .vacancy__info {
+          flex-direction: column;
+          gap: 80px;
+      }
+
+      .vacancy__conditions,
+      .vacancy__head {
+          width: 100%;
+      }
+
+      .vacancy__head p {
+          max-width: 580px;
+      }
+
+      .vacancy__conditions {
+          max-width: 520px;
+          margin-bottom: 0;
+      }
+
+      .vacancy__photo {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+      }
+
+      .vacancy__photo img {
+          height: 100%;
+      }
+  }
+
+  @media(min-width: 1280px) {
+
+      h2,
+      .vacancy h2 {
+          font-size: 40px;
+      }
+
+      .top {
+          padding: 40px 0 120px;
+      }
+
+      .top__head {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+      }
+
+      .top__head h1 {
+          font-size: 56px;
+          line-height: 56px;
+          margin-bottom: 40px;
+      }
+
+      .top__head p {
+          font-size: 20px;
+          line-height: 30px;
+          max-width: 460px;
+      }
+
+      .top__to-form {
+          max-width: 504px;
+          display: flex;
+          justify-content: space-between;
+          padding: 40px;
+          align-items: center;
+      }
+
+      .top__to-form button {
+          margin-top: 0;
+          max-width: 100px;
+      }
+.vacancy {
+    padding: 120px 0;
 }
+      .vacancy__head h2 {
+          margin-bottom: 40px;
+      }
+
+      .vacancy__head p {
+          font-size: 20px;
+          line-height: 30px;
+      }
+
+      .vacancy__conditions div {
+          padding: 40px;
+      }
+
+      .vacancy__conditions h1 {
+          font-size: 56px;
+          line-height: 56px;
+      }
+  }
+
+  @media(min-width: 1440px) {
+      .header {
+          padding: 0 45px;
+      }
+
+      .container {
+          max-width: 1420px;
+          /* min-width: 342px; */
+          /* margin: 0 auto; */
+      }
+      .vacancy__conditions {
+        max-width: 580px;
+    }
+      .presentation__btns {
+          width: 440px;
+      }
+
+      .footer__bg {
+          background-image: url(../assets/images/footer/footer-main-full.svg);
+          max-width: 1420px;
+          /* padding: 60px; */
+      }
+  }
 
   /* Подключение шрифтов */
   @font-face {
