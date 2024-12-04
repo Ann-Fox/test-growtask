@@ -2,12 +2,12 @@
 new Swiper(".mySwiper", {
     cssMode: true,
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".next-Btn",
+        prevEl: ".prev-btn",
     },
-    pagination: {
-        el: ".swiper-pagination",
-    },
+   //  pagination: {
+   //      el: ".swiper-pagination",
+   //  },
     mousewheel: true,
     keyboard: true,
 });
