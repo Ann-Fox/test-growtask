@@ -103,6 +103,50 @@
       align-items: center;
   }
 
+  .header__logo {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .header__logo-text {
+    position: absolute;
+            font-family: Raleway;
+    font-weight: 800;
+    font-size: 20px;
+line-height: 20px;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.3s ease;
+    color: var(--btn-primaty-static);
+  }
+
+  .header__logo:hover .header__icon {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  .header__icon {
+    transition: 0.3s ease;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+
+  .header__logo:hover .header__logo-text {
+    top: 50%;
+    opacity: 1;
+  }
+
+  .header__logo-text:active {
+    color: var(--btn-primaty-press);
+  }
   .menu__nav {
       display: none;
   }
