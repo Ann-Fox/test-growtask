@@ -24,20 +24,20 @@
     <header class="header" id="header">
         <div class="header__content container">
 
-            <a class="header__logo">
+            <a data-goto=".top" class="header__logo link-id">
                 <img class='header__icon' src="./assets/images/logo-gradient.svg" alt="">
-                <span class="header__logo-text">Наверх</span>
+                <span data-goto=".top" class="header__logo-text link-id">Наверх</span>
             </a>
 
             <div class="header__menu">
                 <nav class="menu__nav">
                     <ul class="menu__ul">
-						<li><a href="#vacancy" class="menu__link">Текст и картинки</a></li>
-						<li><a href="#slider" class="menu__link">Пример слайдера</a></li>
-						<li><a href="#presentation" class="menu__link">Кнопки и картинки</a></li>
-						<li><a href="#faq" class="menu__link">Вопрос — ответ</a></li>
-						<button class="header__btn btn">К форме</button>
-						<!-- <div class="social-burger">
+                        <li><a data-goto=".vacancy" href="#" class="menu__link link-id">Текст и картинки</a></li>
+                        <li><a data-goto=".slider" href="#" class="menu__link link-id">Пример слайдера</a></li>
+                        <li><a data-goto=".presentation" href="#" class="menu__link link-id">Кнопки и картинки</a></li>
+                        <li><a data-goto=".faq" href="#" class="menu__link link-id">Вопрос — ответ</a></li>
+                        <button data-goto=".footer" class="header__btn link-id">К форме</button>
+                        <!-- <div class="social-burger">
 							<a class="social__link" target="_blank" href="https://vk.com/zeptorqy1ad">
 								<img src="./img/Footer/VK.svg" alt="VK">
 							</a>
@@ -45,7 +45,7 @@
 								<img src="./img/Footer/Tg.svg" alt="Telegram">
 							</a>
 						</div> -->
-					</ul>
+                    </ul>
                 </nav>
                 <button class="btn-burger">
                     <img src="assets/icons/Burger.svg" alt="">
@@ -73,12 +73,12 @@
                 </div>
                 <div class="top__to-form">
                     <h4>Покажи сколл <span>до формы:</span></h4>
-                    <button>К форме</button>
+                    <button data-goto=".footer" class="link-id">К форме</button>
                 </div>
             </section>
         </div>
         <!-- section vacancy  -->
-        <div class="paddig-main bg" id="vacancy">
+        <div class="paddig-main bg">
             <section class="vacancy container">
                 <div class="vacancy__info">
                     <div class="vacancy__head">
@@ -109,7 +109,7 @@
             </section>
         </div>
         <!-- section slider  -->
-        <div class="paddig-main" id="slider">
+        <div class="paddig-main">
             <section class="slider container">
                 <div class="slider__container">
                     <div class="slider__head">
@@ -174,7 +174,7 @@
             </section>
         </div>
         <!-- section presentation  -->
-        <div class="paddig-main bg" id="presentation">
+        <div class="paddig-main bg">
             <section class="presentation container">
                 <div class="presentation__container">
                     <picture class="presentation__image">
@@ -206,7 +206,7 @@
             </section>
         </div>
         <!-- section faq  -->
-        <div class="paddig-main" id="faq">
+        <div class="paddig-main">
             <section class="faq container">
                 <div class="faq__container">
                     <h2>Ответы на вопросы</h2>
@@ -267,7 +267,7 @@
             </section>
         </div>
     </main>
-    <footer>
+    <footer class="footer">
         <section class="footer__container">
             <div class="footer__bg">
                 <div class="footer__head">

@@ -1,3 +1,41 @@
+// Прокрутка при клике
+const menuLinks = document.querySelectorAll('.link-id[data-goto]')
+
+if (menuLinks.length > 0) {
+   menuLinks.forEach((menuLink) => {
+      menuLink.addEventListener('click', onMenuLinkClick)
+   })
+
+   function onMenuLinkClick(e) {
+      const menuLink = e.target
+
+      if (
+         menuLink.dataset.goto &&
+         document.querySelector(menuLink.dataset.goto)
+      ) {
+         const gotoBlock = document.querySelector(menuLink.dataset.goto)
+         const gotoBlockValue =
+            gotoBlock.getBoundingClientRect().top + scrollY ||
+            document.documentElement.scrollTop -
+               document.querySelector('header')
+
+         // if (iconMenu.classList.contains('_active')) {
+         //    document.body.classList.remove('_lock')
+         //    logoName.classList.remove('_opened')
+         //    iconMenu.classList.remove('_active')
+         //    menuBody.classList.remove('_active')
+         // }
+
+         window.scrollTo({
+            top: gotoBlockValue,
+            behavior: 'smooth',
+         })
+
+         e.preventDefault()
+      }
+   }
+}
+
 // Initialize Swiper
 new Swiper(".mySwiper", {
     cssMode: true,
@@ -5,9 +43,6 @@ new Swiper(".mySwiper", {
         nextEl: ".next-Btn",
         prevEl: ".prev-btn",
     },
-   //  pagination: {
-   //      el: ".swiper-pagination",
-   //  },
     mousewheel: true,
     keyboard: true,
 });
