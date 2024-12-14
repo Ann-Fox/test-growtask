@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -16,14 +16,14 @@
     <!-- Подключение стилей -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
-    
+
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <title>Growtask</title>
 </head>
 
-<body>
+<body class="page">
     <header class="header" id="header">
         <div class="header__content container">
 
@@ -33,24 +33,20 @@
             </a>
 
             <div class="header__menu">
-                <nav class="menu__nav">
+                <nav class="menu__nav" id="myDropdown">
                     <ul class="menu__ul">
                         <li><a data-goto=".vacancy" href="#" class="menu__link link-id">Текст и картинки</a></li>
                         <li><a data-goto=".slider" href="#" class="menu__link link-id">Пример слайдера</a></li>
                         <li><a data-goto=".presentation" href="#" class="menu__link link-id">Кнопки и картинки</a></li>
                         <li><a data-goto=".faq" href="#" class="menu__link link-id">Вопрос — ответ</a></li>
                         <button data-goto=".footer" class="header__btn link-id">К форме</button>
-                        <!-- <div class="social-burger">
-							<a class="social__link" target="_blank" href="https://vk.com/zeptorqy1ad">
-								<img src="./img/Footer/VK.svg" alt="VK">
-							</a>
-							<a class="social__link" target="_blank" href="https://t.me/Zeptorqyiad">
-								<img src="./img/Footer/Tg.svg" alt="Telegram">
-							</a>
-						</div> -->
+                        <div class="social__links">
+                            <a class="social__link" href="https://vk.com/growtask" target="_blank"><img src="./assets/icons/vk.svg" alt=""></a>
+                            <a class="social__link" href="https://t.me/growtask" target="_blank"><img src="./assets/icons/tg.svg" alt=""></a>
+						</div>
                     </ul>
                 </nav>
-                <button class="btn-burger">
+                <button onclick="myFunction()" class="btn-burger header__burger dropbtn">
                     <img src="assets/icons/Burger.svg" alt="">
                 </button>
             </div>
@@ -297,7 +293,7 @@
                 </div>
                 <div class="footer__social">
                     <h4>Не забудь вставить соц.сети</h4>
-                    <div class="footer__social__links">
+                    <div class="social__links">
                         <a href="https://vk.com/growtask" target="_blank"><img src="./assets/icons/vk.svg" alt=""></a>
                         <a href="https://t.me/growtask" target="_blank"><img src="./assets/icons/tg.svg" alt=""></a>
                     </div>
